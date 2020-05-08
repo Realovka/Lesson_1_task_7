@@ -6,10 +6,10 @@ public class Main {
 
     public static void main(String[] args) {
         System.out.println("Введите число ");
-        Scanner scan=new Scanner(System.in);
-        int a=scan.nextInt();
+        Scanner scan = new Scanner(System.in);
+        int a = scan.nextInt();
 
-        if(a<=14) {
+        if (a <= 14) {
             switch (a) {
                 case 1:
                     System.out.println(a + " программист");
@@ -32,19 +32,21 @@ public class Main {
                     System.out.println(a + " программистов");
                     break;
             }
-        }
-            else {
-                if (a%10==1){
-                    System.out.println(a+" программист");
+        } else {
+            if (a % 1000 == 111 || a % 1000 == 112 || a % 1000 == 113 || a % 1000 == 114){
+                System.out.println(a+" программистов");
+            } else {
+                if (a % 10 == 1) {
+                    System.out.println(a + " программист");
                 }
-                if (a%10==2 || a%10==3 || a%10==4){
-                    System.out.println(a+" программиста");
+                if (a % 10 == 2 || a % 10 == 3 || a % 10 == 4) {
+                    System.out.println(a + " программиста");
                 }
-                if (a%10==5 || a%10==6 || a%10==7 || a%10==8 || a%10==9 || a%10==0){
-                    System.out.println(a+ " программистов");
+                if (a % 10 == 5 || a % 10 == 6 || a % 10 == 7 || a % 10 == 8 || a % 10 == 9 || a % 10 == 0) {
+                    System.out.println(a + " программистов");
                 }
 
-
+            }
         }
     }
 }
